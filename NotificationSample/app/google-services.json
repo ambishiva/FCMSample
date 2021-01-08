@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "957364237299",
+    "project_id": "epcoket",
+    "storage_bucket": "epcoket.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:957364237299:android:0e9e23e2c3a5ac0ab29886",
+        "android_client_info": {
+          "package_name": "com.fcm.notificationsample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "957364237299-l5j09ikic3hd73h5lpett0jo27o9nllq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGcGBXvJ-P7SN9S4MItdsiSdJmyFzv0As"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "957364237299-l5j09ikic3hd73h5lpett0jo27o9nllq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
