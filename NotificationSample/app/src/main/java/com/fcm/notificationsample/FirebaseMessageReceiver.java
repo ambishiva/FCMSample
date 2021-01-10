@@ -29,21 +29,21 @@ public class FirebaseMessageReceiver
         // attributes. Since here we do not have any data
         // payload, This section is commented out. It is
         // here only for reference purposes.
-        /*if(remoteMessage.getData().size()>0){
+        if(remoteMessage.getData().size()>0){
             showNotification(remoteMessage.getData().get("title"),
-                          remoteMessage.getData().get("message"));
-        }*/
+                          remoteMessage.getData().get("detail"));
+        }
 
         // Second case when notification payload is
         // received.
-        if (remoteMessage.getNotification() != null) {
-            // Since the notification is received directly from
-            // FCM, the title and the body can be fetched
-            // directly as below.
-            showNotification(
-                    remoteMessage.getNotification().getTitle(),
-                    remoteMessage.getNotification().getBody());
-        }
+//        if (remoteMessage.getNotification() != null) {
+//            // Since the notification is received directly from
+//            // FCM, the title and the body can be fetched
+//            // directly as below.
+//            showNotification(
+//                    remoteMessage.getNotification().getTitle(),
+//                    remoteMessage.getNotification().getBody());
+//        }
     }
 
     // Method to get the custom Design for the display of
