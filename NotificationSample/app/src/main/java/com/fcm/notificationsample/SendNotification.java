@@ -98,53 +98,15 @@ public class SendNotification extends AppCompatActivity {
                         // do anything with response
                         etToken.setText("");
                         Toast.makeText(SendNotification.this,"Notification sent successfully",Toast.LENGTH_SHORT).show();
-                        Log.d("Notifivation Sent Response", response.toString());
+                        Log.d("Notification Sent Response", response.toString());
                     }
 
                     @Override
                     public void onError(ANError error) {
                         // handle error
-
-                        Log.d("Notifivation error Response", error.getErrorDetail());
+                        Log.d("Notification error Response", error.getErrorDetail());
                     }
                 });
-
-//        DefaultHttpClient httpClient = new DefaultHttpClient();
-//        HttpPost postRequest = new HttpPost(
-//                "https://fcm.googleapis.com/fcm/send");
-//
-//        NotificationRequestModel notificationRequestModel = new NotificationRequestModel();
-//        NotificationData notificationData = new NotificationData();
-//
-//        notificationData.setDetail("this is firebase push notification from java client (server)");
-//        notificationData.setTitle("Hello Firebase Push Notification");
-//        notificationRequestModel.setData(notificationData);
-//        notificationRequestModel.setTo(etToken.getText().toString());
-//
-//
-//        Gson gson = new Gson();
-//        Type type = new TypeToken<NotificationRequestModel>() {
-//        }.getType();
-//
-//        String json = gson.toJson(notificationRequestModel, type);
-//
-//        StringEntity input = new StringEntity(json);
-//        input.setContentType("application/json");
-//        postRequest.addHeader("Authorization", "key=AAAA7-UgB34:APA91bFz75NiS8BUX9LJDeEk9kcCahpZ1-MYyFfQ3d2gof0vUAFKNcQCmmf_10aZkmZH6fVPvcF71kgHq5Ab4ol0mvhvVwgMn-HS_0i-2DipSxd2Jf2_NUTYtJMOVwUGP318ldDgBBvP");
-//        postRequest.setEntity(input);
-//
-//
-//        System.out.println("reques:" + json);
-//
-//
-//        HttpResponse response = httpClient.execute(postRequest);
-//
-//        if (response.getStatusLine().getStatusCode() != 200) {
-//            throw new RuntimeException("Failed : HTTP error code : "
-//                    + response.getStatusLine().getStatusCode());
-//        } else if (response.getStatusLine().getStatusCode() == 200) {
-//            System.out.println("response:" + EntityUtils.toString(response.getEntity()));
-//        }
 
     }
 
