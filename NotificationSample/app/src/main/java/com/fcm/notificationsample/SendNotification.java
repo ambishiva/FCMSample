@@ -96,6 +96,8 @@ public class SendNotification extends AppCompatActivity {
                     @Override
                     public void onResponse(JSONObject response) {
                         // do anything with response
+                        etToken.setText("");
+                        Toast.makeText(SendNotification.this,"Notification sent successfully",Toast.LENGTH_SHORT).show();
                         Log.d("Notifivation Sent Response", response.toString());
                     }
 
